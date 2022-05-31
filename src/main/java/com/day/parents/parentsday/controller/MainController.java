@@ -1,4 +1,4 @@
-package com.day.parants.parentsday.controller;
+package com.day.parents.parentsday.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

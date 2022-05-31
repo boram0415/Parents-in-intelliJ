@@ -1,4 +1,4 @@
-package com.day.parants.parentsday;
+package com.day.parents.parentsday;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

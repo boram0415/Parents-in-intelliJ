@@ -1,7 +1,7 @@
-package com.day.parants.parentsday.controller;
+package com.day.parents.parentsday.controller;
 
-import com.day.parants.parentsday.model.MemberDTO;
-import com.day.parants.parentsday.service.MemberService;
+import com.day.parents.parentsday.model.MemberDTO;
+import com.day.parents.parentsday.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class LoginController {
 
     @Autowired
-    private MemberService MemService ;
+    private MemberService memberService ;
     public JavaMailSender jm;
 
     @RequestMapping(value = "login")
@@ -30,7 +30,7 @@ public class LoginController {
     @ResponseBody
     @PostMapping(value = "/login/ajax")
     public String MemberLogin(MemberDTO dto) {
-        int flag = MemService.MemberLogin(dto);
+        int flag = memberService.MemberLogin(dto);
         if(flag > 0) {
             return "1111";
         }
@@ -39,7 +39,7 @@ public class LoginController {
 
     @GetMapping(value = "/login/auth")
     public @ResponseBody String loginAuth() {
-        return MemService.sendEmail(jm);
+        return memberService.sendEmail(jm);
     }
 
 }

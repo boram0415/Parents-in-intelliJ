@@ -1,4 +1,4 @@
-package com.day.parants.parentsday;
+package com.day.parents.parentsday;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

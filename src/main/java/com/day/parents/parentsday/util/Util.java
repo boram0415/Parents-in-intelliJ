@@ -1,4 +1,4 @@
-package com.day.parants.parentsday.util;
+package com.day.parents.parentsday.util;
 
 import java.util.ArrayList;
 

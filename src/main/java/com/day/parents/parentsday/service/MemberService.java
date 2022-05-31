@@ -1,8 +1,8 @@
-package com.day.parants.parentsday.service;
+package com.day.parents.parentsday.service;
 
-import com.day.parants.parentsday.model.MemberDTO;
-import com.day.parants.parentsday.repository.MappingDAO;
-import com.day.parants.parentsday.util.Util;
+import com.day.parents.parentsday.model.MemberDTO;
+import com.day.parents.parentsday.repository.MappingDAO;
+import com.day.parents.parentsday.util.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
 public class MemberService {
 
 	@Autowired
-	MappingDAO dao;
+	MappingDAO mappingDAO;
 
 	public int MemberLogin(MemberDTO dto) {
 		dto.setUserIp(new Util().getUserIp());
-		return dao.MemberLogin(dto);
+		return mappingDAO.MemberLogin(dto);
 	}
 
 	public String sendEmail(JavaMailSender js) {

@@ -1,4 +1,4 @@
-package com.day.parants.parentsday.model;
+package com.day.parents.parentsday.model;
 
 import lombok.*;
 

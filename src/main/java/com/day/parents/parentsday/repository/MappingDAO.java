@@ -1,6 +1,6 @@
-package com.day.parants.parentsday.repository;
+package com.day.parents.parentsday.repository;
 
-import com.day.parants.parentsday.model.MemberDTO;
+import com.day.parents.parentsday.model.MemberDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
