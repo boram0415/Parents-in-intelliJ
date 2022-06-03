@@ -28,7 +28,7 @@ public class LoginController {
 
     @RequestMapping(value = "kakaoLogin")
     public String test() {
-        return "test";
+        return "kakaoLogin Success!!";
     }
 
     @GetMapping(value = "/login/auth")

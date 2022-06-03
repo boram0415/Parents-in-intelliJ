@@ -17,8 +17,8 @@
   	INSERT INTO member (userIp,userId,userPw) VALUES (#{userIp} ,#{userId} ,#{userPw});
   </insert>
 
-    <select id="getMember" resultType="MemberDTO">
-        SELECT * FROM MEMBER ;
-    </select>
+<!--    <select id="getMember" resultType="MemberDTO">-->
+<!--        SELECT * FROM MEMBER ;-->
+<!--    </select>-->
 
 </mapper>
