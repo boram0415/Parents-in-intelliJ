@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ include file="../javaScript/indexScript.jsp" %>
+<%@ include file="../header/header.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +101,7 @@
     
                 <div class="modal-login-box" >
                     <div type="submit" id="loginBtn" class="modal-default-button">로그인</div>
-                    <div type="submit" id="K-LoginBtn" class="modal-default-button kakao-login">카카오톡 로그인</div>
+                    <div type="submit" id="kakaoLoginBtn" class="modal-default-button kakao-login" onclick="javascript:kakaoLogin();">카카오톡 로그인</div>
                     <div class="modal-join">
                         <div class="modal-join-box">회원가입</div>
                         <div class="black"></div>

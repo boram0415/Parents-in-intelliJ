@@ -11,4 +11,9 @@ public class MainController {
         return "index/index";
     }
 
+    @GetMapping("write")
+    public String laterPage(){
+        return "/later/write";
+    }
+
 }
