@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'ON-IGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eleven@1.0/ON-IGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html,body,span,div,a,table,th,tr,img{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'ON-IGothic';
+}
+html,body{
+    font-size:16px;
+    overflow:hidden; 
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+    min-height: 476px;
+    min-width: 182px;
+}
+
+.nav-mainBox{
+    /*display: none;*/
+    height: 100%;
+    width: 248px;
+    background-color: white;
+    position: absolute;
+    right: -100%;
+}
+
+.nav-subBox{
+    height: 100%;
+    width: 76%;
+}
+
+.nav-xIcon{
+    height: 10%;
+    /* padding: 5%; */
+}
+.nav-userName{
+    margin-left: 10px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: rgb(137, 137, 137);
+    font-family: 'ON-IGothic';
+    align-items: center;
+}
+
+.nav-xBox{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.nav-nameBox{
+    width: 100%;
+    height: 10%;
+}
+.nav-homeBox{
+    width: 100%;
+    height: 17%;
+}
+.nav-intro{
+    width: 100%;
+    height: 23%;
+    font-family: 'GmarketSansMedium';
+}
+
+.nav-empty{
+    width: 100%;
+    height: 3%;
+}
+
+.nav-empty div {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(246, 246, 246);
+}
+
+
+.nav-seconBox{
+    width: 100%;
+    height: 100%;
+
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-home{
+    height: 50%;
+    justify-content: left;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'IBMPlexSansKR-Bold';
+}
+.nav-myPage{
+    height: 50%;
+    justify-content: left;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'IBMPlexSansKR-Bold';
+}
+
+.nav-xBox img{
+    display: block;
+    height: 80%;
+    width: 10%;
+    object-fit: cover;
+  }
+
+.nav-profile img{
+    display: block;
+    height: 80%;
+    width: 45px;
+    object-fit: cover;
+}
+
+.nav-intro div {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}

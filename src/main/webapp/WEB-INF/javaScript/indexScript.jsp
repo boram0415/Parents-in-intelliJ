@@ -53,6 +53,10 @@
 			kakaoLogin();
 		})
 
+        $('#kakaoLogOutBtn').click(function(){
+            kakaoLogout();
+		})
+
         // 카카오 로그인
         Kakao.init('0c3979c7569108b4e9d2a25996805301'); //발급받은 키 중 javascript키를 사용해준다.
         console.log(Kakao.isInitialized()); // sdk초기화여부판단
@@ -63,8 +67,16 @@
                     Kakao.API.request({
                         url: '/v2/user/me',
                         success: function (response) {
-                            console.log(response)
-                            location.href = "/kakaoLogin";
+                            alert(response);
+                            // console.log(response.response.code);
+                            // location.href = "/kakaoLogin";
+                            Kakao.API.request({
+                                url : '/v2/user/me',
+                                success:(res) =>{
+                                    console.log('success!')
+                                    alert(res.kakao_name);
+                                }
+                            });
                         },
                         fail: function (error) {
                             console.log(error)
@@ -74,7 +86,7 @@
                 fail: function (error) {
                     console.log(error)
                 },
-            })
+            });
         }
         //카카오로그아웃
         function kakaoLogout() {
@@ -92,7 +104,46 @@
             }
         }
 
+        // 오른쪽 메뉴 클릭 시
+        $('.nav-box').on('click',(function () {
+            // $('.nav-mainBox').css('display','block');
+            $('.nav-mainBox').show().animate({
+                right :'-' + 0 + 'px'
+            });
+
+        // $('.nav-xBox img').on('click',(function () {
+        //     $('.nav-mainBox').hidden().animate({
+        //         right :'-' + 0 + 'px'
+        //     });
+        // });
+
+        $('.nav-xBox img').on('click',function(){
+            $('.menu_bg').hide();
+            $('.sidebar_menu').animate({
+                right:'-' + 50 + '%'
+            },function(){$('.modal-back').hide();});
+        });
 
 
-});
 </script>
+
+<script>
+    $(document).ready(function(){
+
+        $('.menu_btn>a').on('click', function(){
+            $('.menu_bg').show();
+            $('.sidebar_menu').show().animate({
+                right:0
+            });
+        });
+        $('.close_btn>a').on('click', function(){
+            $('.menu_bg').hide();
+            $('.sidebar_menu').animate({
+                right: '-' + 50 + '%'
+            },function(){$('.sidebar_menu').hide(); });
+        });
+
+    });
+</script>
+
+

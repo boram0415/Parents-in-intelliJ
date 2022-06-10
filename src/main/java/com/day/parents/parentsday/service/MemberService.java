@@ -7,15 +7,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Service
 public class MemberService {
 
 	@Autowired
 	MappingDAO mappingDAO;
 
-	public int MemberLogin(MemberDTO dto) {
+	public String MemberLogin(MemberDTO dto , HttpServletRequest req) {
 		dto.setUserIp(new Util().getUserIp());
-		return mappingDAO.MemberLogin(dto);
+
+		if (mappingDAO.MemberLogin(dto) > -1 ){
+			req.getSession();
+			return "1111";
+		}
+		return "0000";
 	}
 
 	public String sendEmail(JavaMailSender js) {

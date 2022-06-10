@@ -45,17 +45,6 @@ html,body {
     min-height: 476px;
     min-width: 182px;
 }
-/* .logo-img{
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-}
-.logo-con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .section-but-box{
     height: 10%;
     min-width: 154px;

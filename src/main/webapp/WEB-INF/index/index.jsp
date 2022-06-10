@@ -10,13 +10,53 @@
 
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/nav.css">
    	<!-- <link rel="stylesheet" href="../static/css/index.css">
    	<link rel="stylesheet" href="../static/css/modal.css"> -->
- 
+
 </head>
 <body>
     <div class="main-container">
+        <!-- nav page  -->
+        <c:import url="nav.jsp"></c:import>
+
         <div class="main-sub">
+            <div class="nav-mainBox">
+                <div class="nav-seconBox display">
+                    <div class="nav-subBox">
+
+                        <div class="nav-xIcon display">
+                            <div class="nav-xBox">
+                                <img src="/img/x_icon_152715.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="nav-nameBox display">
+                            <div class="nav-profile">
+                                <img src="/img/account_profile_user_avatar_icon_219236.png" alt="">
+                            </div>
+                            <div class="nav-userName">
+                                김보람
+                            </div>
+
+                        </div>
+
+                        <div class="nav-homeBox">
+                            <div class="nav-home display">홈</div>
+                            <div class="nav-myPage display">마이페이지</div>
+                        </div>
+
+                        <div class="nav-empty">
+                            <div class=""></div>
+                        </div>
+
+                        <div class="nav-intro">
+                            <div class="">응원의 쪽지 남기기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <header class="header-con">
                 <div class="header-box">
                     <div class="logo-con">
@@ -54,10 +94,11 @@
 
         <!-- 옆 메뉴 클릭 시  -->
         <nav>
-            <div class="nav-con"></div>
+
         </nav>
 
     </div>
+
 	<!--하단 -->
     <div class="footer-con">
         <div class="footer-box">
@@ -101,7 +142,8 @@
     
                 <div class="modal-login-box" >
                     <div type="submit" id="loginBtn" class="modal-default-button">로그인</div>
-                    <div type="submit" id="kakaoLoginBtn" class="modal-default-button kakao-login" onclick="javascript:kakaoLogin();">카카오톡 로그인</div>
+                    <div type="submit" id="kakaoLoginBtn" class="modal-default-button kakao-login">카카오톡 로그인</div>
+                    <div type="submit" id="kakaoLogOutBtn" class="modal-default-button kakao-login">카카오톡 로그아웃</div>
                     <div class="modal-join">
                         <div class="modal-join-box">회원가입</div>
                         <div class="black"></div>
@@ -111,6 +153,9 @@
             </div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>

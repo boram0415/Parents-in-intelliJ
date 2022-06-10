@@ -9,7 +9,6 @@
   z-index : 1;
 }
 
-
 .modal-back::after{
     position: absolute;
     top: 0;
