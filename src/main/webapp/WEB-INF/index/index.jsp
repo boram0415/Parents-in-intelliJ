@@ -18,8 +18,7 @@
 <body>
     <div class="main-container">
         <!-- nav page  -->
-        <c:import url="nav.jsp"></c:import>
-
+<%--        <c:import url="nav.jsp"></c:import>--%>
         <div class="main-sub">
             <div class="nav-mainBox">
                 <div class="nav-seconBox display">
@@ -91,12 +90,6 @@
                 <div class="default-button" id="later_write">부모님께 마음 전하기</div>
             </div>
         </div>
-
-        <!-- 옆 메뉴 클릭 시  -->
-        <nav>
-
-        </nav>
-
     </div>
 
 	<!--하단 -->
@@ -107,10 +100,10 @@
                     CONTACT
                 </div>
                 <div class="" style="font-family: 'Noto Sans KR', sans-serif;">
-                    <div class="" style="font-size: 1rem;"><strong style="font-size: 16px;">Phone</strong> 010-1234-5678
+                    <div class="" style="font-size: 1rem;"><strong style="font-size: 16px;">Git</strong> boram0415.github.io
                     </div>
                     <div class="" style="font-size: 1rem;"><strong style="font-size: 16px;">Email</strong>
-                        test@naver.com</div>
+                        boram04415@naver.com</div>
                     <!-- <div class="ipm"style="font-size: 12px;"><strong style="font-size: 16px;"><a href="https://github.com/boram0415/ParentsDay"></a>GitHub</strong></div> -->
                 </div>
             </div>
@@ -118,8 +111,8 @@
     </div>
 
     <!-- 회원가입 모달 -->
+    <div class="modal-back"></div>
     <div class="modal-con" id="login_modal">
-        <div class="modal-back"></div>
         <div class="modal-box">
             <div class="modal-sub">
                 <div class="modal-back-btn "> <img src="img/pngwing.com.png" alt=""class="back_btn"> </div>
@@ -143,7 +136,7 @@
                 <div class="modal-login-box" >
                     <div type="submit" id="loginBtn" class="modal-default-button">로그인</div>
                     <div type="submit" id="kakaoLoginBtn" class="modal-default-button kakao-login">카카오톡 로그인</div>
-                    <div type="submit" id="kakaoLogOutBtn" class="modal-default-button kakao-login">카카오톡 로그아웃</div>
+<%--                    <div type="submit" id="kakaoLogOutBtn" class="modal-default-button kakao-login">카카오톡 로그아웃</div>--%>
                     <div class="modal-join">
                         <div class="modal-join-box">회원가입</div>
                         <div class="black"></div>

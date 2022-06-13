@@ -37,15 +37,24 @@
 		// 편지 쓰기 클릭 시 로그인 모달 팝업
 		$('#later_write').click(function() {
 			if ($("#login_modal").css("display") == "none") {
+				$(".modal-back ").css('display','block');
 				$("#login_modal").show();
 			} else {
 				$("#login_modal").hide();
 			}
 		});
 
+        $('.modal-back').on('click',function (){
+            console.log('dsds');
+        })
+
 		// 뒷배경 및 로그인 뒤로가기 클릭 시 모달창 숨기기
 		$('.modal-back , .back_btn').click(function() {
+            console.log(
+                'click'
+            );
 			$('#login_modal').hide();
+			$('.modal-back ').css('display','none');
 		})
 
 		// 카카오 로그인 클릭 시
@@ -105,45 +114,22 @@
         }
 
         // 오른쪽 메뉴 클릭 시
-        $('.nav-box').on('click',(function () {
+        $('.nav-box').on('click',function () {
             // $('.nav-mainBox').css('display','block');
             $('.nav-mainBox').show().animate({
-                right :'-' + 0 + 'px'
-            });
-
-        // $('.nav-xBox img').on('click',(function () {
-        //     $('.nav-mainBox').hidden().animate({
-        //         right :'-' + 0 + 'px'
-        //     });
-        // });
-
-        $('.nav-xBox img').on('click',function(){
-            $('.menu_bg').hide();
-            $('.sidebar_menu').animate({
-                right:'-' + 50 + '%'
-            },function(){$('.modal-back').hide();});
-        });
-
-
-</script>
-
-<script>
-    $(document).ready(function(){
-
-        $('.menu_btn>a').on('click', function(){
-            $('.menu_bg').show();
-            $('.sidebar_menu').show().animate({
-                right:0
+                right: '-' + 0 + 'px'
             });
         });
-        $('.close_btn>a').on('click', function(){
-            $('.menu_bg').hide();
-            $('.sidebar_menu').animate({
-                right: '-' + 50 + '%'
-            },function(){$('.sidebar_menu').hide(); });
-        });
 
-    });
+        $('.nav-xBox img').on('click', function () {
+            $('.nav-mainBox').animate({
+                right: '-' + 66 + '%'
+            }, function () {
+                // 기능
+            });
+         });
+});
+
 </script>
 
 

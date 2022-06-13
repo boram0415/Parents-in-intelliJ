@@ -152,7 +152,6 @@ html,body{
 
 .nav-profile img{
     display: block;
-    height: 80%;
     width: 45px;
     object-fit: cover;
 }
